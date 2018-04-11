@@ -18,8 +18,8 @@
     "require": {
         "php": ">=5.5.0",
         "ramsey/uuid": "~2.8",
-        "react/socket-client": "v0.4.3",
-        "TrafficCophp/ByteBuffer": "dev-master",
+        "react/socket": "^1.0 || ^0.8.3",
+        "TrafficCophp/ByteBuffer": "^0.3",
         "psr/log": "1.0.0"
     },
     "require-dev": {
