@@ -23,7 +23,7 @@ class PersistentSubscriptionConfirmationHandler implements Communicable
     {
         $dataObject = new Data\PersistentSubscriptionConfirmation();
         $dataObject->parseFromString($data);
-        $dataObject->dump();
+
 
         return new SocketMessage($messageType, $correlationID, $dataObject);
     }

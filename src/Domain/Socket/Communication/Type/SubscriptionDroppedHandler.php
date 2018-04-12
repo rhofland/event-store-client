@@ -23,7 +23,7 @@ class SubscriptionDroppedHandler implements Communicable
     {
         $dataObject = new Data\SubscriptionDropped();
         $dataObject->parseFromString($data);
-        $dataObject->dump();
+
 
         return new SocketMessage($messageType, $correlationID, $dataObject);
     }

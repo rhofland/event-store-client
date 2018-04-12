@@ -23,7 +23,7 @@ class PersistentSubscriptionStreamEventAppearedHandler implements Communicable
     {
         $dataObject = new Data\PersistentSubscriptionStreamEventAppeared();
         $dataObject->parseFromString($data);
-        $dataObject->dump();
+
 
         return new SocketMessage($messageType, $correlationID, $dataObject);
     }

@@ -22,7 +22,7 @@ class StreamEventAppearedHandler implements Communicable
     {
         $dataObject = new Data\StreamEventAppeared();
         $dataObject->parseFromString($data);
-        $dataObject->dump();
+
 
         return new SocketMessage($messageType, $correlationID, $dataObject);
     }

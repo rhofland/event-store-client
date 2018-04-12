@@ -22,7 +22,7 @@ class WriteEventsCompletedHandler implements Communicable
     {
         $dataObject = new Data\WriteEventsCompleted();
         $dataObject->parseFromString($data);
-        $dataObject->dump();
+
 
         return new SocketMessage($messageType, $correlationID, $dataObject);
     }

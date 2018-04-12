@@ -22,7 +22,7 @@ class SubscriptionConfirmationHandler implements Communicable
     {
         $dataObject = new Data\SubscriptionConfirmation();
         $dataObject->parseFromString($data);
-        $dataObject->dump();
+
 
         return new SocketMessage($messageType, $correlationID, $dataObject);
     }
